@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task07</title>
+    <style>
+        body
+        {
+            background-color:rgb(182, 39, 105);
+        }
+
+        table
+        {
+            margin: auto;
+        }
+        .Table
+        {
+            background-color: rgb(184, 10, 53);
+            color: white;
+            margin-top: 150px;
+            margin-left: 400px;
+            margin-right: 400px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+        td
+        {
+            padding:6px;
+        }
+        button
+        {
+            padding: 10px 150px;
+            border-radius: 7px;
+            border-color: aliceblue;
+        }
+        button:hover
+        {
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+   <div class="Table"> 
+    <table>
+        <form action="">
+          <tr>
+            <td><label for="name">Name:</label></td>
+            <td><input type="text" placeholder="your name" required></td>
+          </tr>
+          <tr>  
+            <td><label for="email">Email:</label></td>
+            <td><input type="email" placeholder="your email" required></td>
+          </tr>
+          <tr> 
+            <td><label for="password">Password:</label></td>
+            <td><input type="password" required></td>
+          </tr>
+          <tr>  
+            <td><label for="phone number">Phone Number:</label></td>
+            <td><input type="tele" required></td>
+          </tr>
+          <tr>  
+            <td><label for="gender">Gender:</label></td>
+            <td>Male:<input type="radio" name="gender"> Female:<input type="radio" name="gender"> Other:<input type="radio" name="gender"></td>
+          </tr>
+          <tr>
+            <td><label for="lang">language</label></td>
+            <td>
+                <select>
+                <option value="" disabled selected hidden>Select language</option>
+                <option value="english">English</option>
+                <option value="telugu">Telugu</option>
+                <option value="hindi">Hindi</option>
+                <option value="tamil">Tamil</option>
+                </select>            
+            </td>
+          </tr>
+          <tr>
+            <td><label for="zipcode">Zip Code:</label></td>
+            <td><input type="number"></td>
+          </tr>
+          <tr>
+            <td><label for="about">About:</label></td>
+            <td><textarea name="address" rows="3" cols="23" placeholder="Write about yourself..."></textarea></td>
+          </tr>
+          <tr>
+            <td colspan="7"><button type="submit" value="Register">Register</button></td>
+          </tr>
+        </form>
+    </table>
+   </div>  
+</body>
+</html>

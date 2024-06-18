@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task01</title>
+    <style>
+        table
+        {
+            border-radius: 9px;
+        }
+        th,td
+        {
+            border-radius: 7px;
+            /*border-radius: 2px;   ----For 1st type of margin in given figures*/
+           /* border-radius: 3px; ----For 2nd type of margin in given figures*/
+           /*border-radius: 5px;    ---For 3rd type of margin in given figures*/
+           /*border-radius:4px; --For 4th type of margin in given figures*/
+           /*border-radius: 0px; ---For 5th type of margin in given figures*/
+           /*border-radius: 8px; ---For 6th type of margin in given figures*/
+            /*border-radius: 50% 60%; ----For 7th type of margin in given figures*/
+            /*border-radius: 2px; ----For 8th type of margin in given figures*/
+           /*border-radius:5px 10px; ---For 9th type of margin in given figures*/
+    
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 100px); /* Adjust the number of columns as needed */
+            grid-gap: 10px;
+            margin: auto;
+            padding-left: 300px;
+        }
+
+        .shape-01 {
+            width: 90px;
+            height: 50px;
+            border: 2px solid lightgreen;
+        }
+
+        .shape-02 {
+            width: 90px;
+            height: 50px;
+            border: 2px solid lightgreen;
+            border-radius: 5px;
+        }
+        .shape-03
+        {
+            width: 90px;
+            height: 50px;
+            border: 2px solid lightgreen;
+            border-radius: 17px;
+        }
+        
+        .shape-04
+        {
+            width: 90px;
+            height: 50px;
+            border: 2px solid lightgreen;
+            border-radius: 9px;
+        }
+        
+        
+        .shape-05
+        {
+            width: 90px;
+            height: 50px;
+            border: 2px solid lightgreen;
+            border-top-left-radius: 2px;
+            border-top-right-radius: 1px;
+            border-bottom-left-radius: 2px;
+            border-bottom-right-radius: 1px;
+        }
+
+        .shape-06
+        {
+            width: 90px;
+            height: 50px;
+            border: 2px solid lightgreen;
+            border-radius: 15px;
+        }
+
+        .shape-07
+        {
+            width:90px;
+            height: 50px;
+            border: 2px solid lightgreen;
+            border-radius:50%;
+        }
+
+        .shape-08
+        {
+            width:90px;
+            height: 50px;
+            border: 2px solid lightgreen;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+            border-bottom-left-radius: 2px;
+            border-bottom-right-radius: 2px;
+        }
+
+        .shape-09
+        {
+            width: 90px;
+            height:50px;
+            border: 2px solid lightgreen;
+            border-radius: 5px 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <table border="1" bgcolor="lightblue" width="60%">
+        <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td>Jill</td>
+            <td>Smith</td>
+            <td>50</td>
+        </tr>
+        <tr>
+            <td>Eve</td>
+            <td>Jackson</td>
+            <td>94</td>
+        </tr>
+        <tr>
+            <td>John</td>
+            <td>Doe</td>
+            <td>80</td>
+        </tr>
+    </table> <br>
+    <div class="grid-container">
+        <div class="shape-01"></div>
+        <div class="shape-02"></div>
+        <div class="shape-03"></div>
+        <div class="shape-04"></div>
+        <div class="shape-05"></div>
+        <div class="shape-06"></div>
+        <div class="shape-07"></div>
+        <div class="shape-08"></div>
+        <div class="shape-09"></div>
+      </div>      
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task02_1&2</title>
+    <style>
+        ul
+        {
+            list-style-type: none;
+            margin:0;
+            padding:0;
+            width: 180px;
+            background-color: rgb(174, 223, 206);
+        }
+
+        li a /*descendant selector-applies to all anchor elements inside the list tag*/
+        {
+            display: block;
+            color: darkblue;
+            padding:8px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover
+        {
+            background-color: goldenrod;
+            color: white;
+        }
+
+        .hornav
+        {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            width: 380px;
+            overflow: hidden;
+            background-color:rgb(206, 206, 206);
+        }
+        
+        .hornav li
+        {
+            float: left; /*To line the elements horizontally*/
+            border-right: 1px solid darkblue;
+        }
+
+        .hornav li a
+        {
+            display:block;
+            color:darkblue;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        .hornav li a:hover
+        {
+            background-color: grey;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <p><strong>Vertical Navigation Bar</strong></p>
+    <!-- Should use #id_name as value of href attribure as it takes to the 
+    element with id id_name in this code i.e way of creating
+    internal links within a single webpage -->
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#Java">Java</a></li>
+        <li><a href="#CSS">CSS</a></li>
+        <li><a href="#HTML">HTML</a></li>
+        <li><a href="#Bootstrap">Bootstrap</a></li>
+    </ul><br>
+    <p><strong>Horizontal Navigation Bar</strong></p>
+    <ul class="hornav">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#Java">Java</a></li>
+        <li><a href="#HTML">HTML</a></li>
+        <li><a href="#CSS">CSS</a></li>
+    </ul>
+</body>
+</html>

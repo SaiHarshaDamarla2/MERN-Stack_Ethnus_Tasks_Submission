@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form-02</title>
+</head>
+<body>
+    <h2><font color="blue"><center>Registration form</center></font></h2>
+    <center>
+        <table border="1"  width="55%">
+          <form>
+            <tr>
+                <th>First Name</th>
+                <td><input type="text" size="76"></td>
+            </tr>
+            <tr>
+                <th>Last Name</th>
+                <td><input type="text" size="76"></td>
+            </tr>
+            <tr>
+                <th>Email</th>
+                <td><input type="email" size="76"></td>
+            </tr>
+            <tr>
+                <th>Password</th>
+                <td><input type="password" size="76"></td>
+            </tr>
+            <tr>
+                <th>Re-enter Password</th>
+                <td><input type="password" size="76"></td>
+            </tr>
+            <!--Here it is mandatory to mention name attribute for radio button
+            It is because radio button's purpose is to select only one of given options
+            So it is mandatory to group all the options under one name so that 
+            Only one option can be selected-->
+            <tr>
+                <th rowspan="2">Gender</th>
+                <td><input type="radio" name="gender">Male</td>
+            <tr>    
+                <td><input type="radio" name="gender">Female</td>
+            </tr>
+            </tr>
+            <tr>
+                <th>Age</th>
+                <td><input type="number" style="width: 560px;"></td>
+            </tr>
+        <!---Here we mentioned Range of numbers in phone number and max length to restrict the input to 10 digits-->
+            <tr>
+                <th>Phone Number</th>
+                <td><input type="tel" pattern="[0-9] {10}" maxlength="10" size="76"></td>
+            </tr>
+            <tr>
+                <th>Address</th>
+                <td><textarea name="address" rows="6" cols="75"></textarea></td>
+            </tr>
+            <!--
+            <tr>
+                <th>Address</th>
+                <td><input type="text" style="height: 100px; width: 563px;"></td>
+            </tr>-->
+            <tr>
+                <th>State</th>
+                <td><input type="text" size="76"></td>
+            </tr>
+            <tr>
+                <th>Country</th>
+                <td>
+                    <select>
+                        <option value="" disabled selected hidden>Choose your Country</option>
+                        <option value="India">India</option>
+                        <option value="USA">USA</option>
+                        <option value="UK">UK</option>
+                        <option value="France">France</option>
+                        <option value="Germany">Germany</option>
+                        <option value="Australia">Australia</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <th>Languages known</th>
+                <td>
+                    <input type="checkbox"English>English
+                    <input type="checkbox"Kannada>Kannada
+                    <input type="checkbox"Hindi>Hindi
+                    <input type="checkbox"Telugu>Telugu
+                </td>
+            </tr>
+            <tr>
+                <td colspan="6"><input type="checkbox"Terms>Hereby I declare all the given details are true</td>
+            </tr>
+            <tr>
+                <td colspan="6" align="right">Log in to <a href="https://ethnus.com/" target="_blank">Ethnus</a> website</td>
+            </tr>
+            <table>
+               <tr>
+                <td><input type="submit" value="Register"></td>
+               </tr>
+            </table>
+          </form>
+        </table>
+  </center>
+</body>
+</html>

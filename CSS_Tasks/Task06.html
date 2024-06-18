@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task06</title>
+    <style>
+        .login-form
+        {
+           width: 700px;
+           margin:auto;
+           padding: 30px; 
+           border-radius: 10px;
+        }
+
+        .input-container
+        {
+            margin-bottom: 15px;
+        }
+
+        .input-container label
+        {
+            display: block;  /*Used to seperate label & input to different lines*/
+            font-weight: bold;
+        }
+
+        .input-container input
+        {
+            width:690px;
+            padding: 10px;
+        }
+
+        .submit
+        {
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 700px;
+        }
+
+        .submit:hover
+        {
+            opacity: 0.8;
+        }
+
+        .remember-me
+        {
+            margin-bottom: 15px;
+        }
+
+        .options
+        {
+            background-color:#f2f2f2;
+            margin: auto;
+            padding: 15px;
+        }
+
+        .cancel
+        {
+            color: white;
+            background-color: red;
+            border-radius: 5px;
+            margin: auto;
+            padding: 7px;
+            border-color: red;
+        }
+
+        .cancel:hover
+        {
+            opacity: 0.8;
+        }
+
+        .avatar img
+        {
+            border-radius: 50%;
+            padding: 20px;
+            width: 150px;
+            display: block;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-form">
+        <span style="font-size: 30px; padding-left: 700px;">&#8599;</span>
+        <div class="avatar">
+          <img src="avatarlogin.jpg" alt="">
+        </div>  
+        <form action="">
+            <div class="input-container">
+                <label for="username">Username</label>
+                <input type="text" name="username" placeholder="Enter Username" required>
+            </div>
+            <div class="input-container">
+                <label for="password">Password</label>
+                <input type="password" name="password" placeholder="Enter Password" required>
+            </div> 
+            <div>
+                <button class="submit" type="submit">Login</button>
+            </div>
+            <div>    
+                <label class="remember-me">
+                    <input type="checkbox" name="remember">
+                    Remember me
+                </label>
+            </div>
+            <div class="options">
+                <button class="cancel"><a href="#"></a>Cancel</button>
+                <p style="display: inline; padding-left:470px;">Forgot <a href="#">password?</a></p>
+            </div>    
+        </form>
+    </div>
+</body>
+</html>
